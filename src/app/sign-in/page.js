@@ -13,7 +13,6 @@ function SignIn() {
   const router = useRouter();
   async function handleSignIn() {
     const result = await loginUserAction(signInFormData);
-    console.log(result);
     if (result?.success) router.push("/");
   }
   return (
